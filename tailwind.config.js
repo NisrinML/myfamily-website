@@ -10,6 +10,27 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'darkgreen':{
+          light:'#51a875',
+        },
+        'darkblue':{
+          light:'#092535',
+        },
+        'white':{
+          light:'#FFFFFF',
+        },
+        'lightblue':{
+          light:'#166088',
+        },
+        'bluehover':{
+          light:'#9DD3D8'
+        },
+        'greenhover':{
+          light:'#B8DDB5',
+        },
+        'darkgreenhover':{
+          light:'#2C8C72'
+        },
       },
     },
   },
