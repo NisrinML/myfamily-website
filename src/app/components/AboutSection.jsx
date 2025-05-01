@@ -6,7 +6,7 @@ const TAB_DATA=[
  {title:"مجالاتنا",
   id:"domains",
   content:(
-<ul className='list-disc pr-2'>
+<ul className='list-disc pr-2 marker:text-darkgreenhover-light'>
   <li>خدمات مجتمعية</li>
   <li>تنمية وإسكان</li>
   <li>صحة</li>
@@ -16,7 +16,7 @@ const TAB_DATA=[
  {title:"أهدافنا",
   id:"goals",
   content:(
-<ul className='list-decimal pr-2'>
+<ul className='list-decimal pr-2 marker:text-darkgreenhover-light'>
   <li>تقديم حزمة من الخدمات المتكاملة للأسرة بما فيها الصحي والتنمية والإسكان وتوفير متطلبات الأسرة.
   </li>
   <li>المساهمة في تدريب وتمكين وتطوير المهارات وتقديم الإرشاد الإجتماعي المتكامل.
@@ -61,8 +61,8 @@ const AboutSection = () => {
   }
   return (
     <section >
-      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 am:py-16 xl:px-16'>
-      <Image src="/images/Team.png" width={500} height={500} />
+      <div className='md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 am:py-16 xl:px-16'>
+      <Image src="/images/Team.jpg" width={500} height={500} className='rounded-xl mt-4 md:mt-12' />
 
         <div className='mt-4 md:mt-8 text-right flex flex-col h-full justify-startu'>
           <h2 className='text-4xl font-bold mb-4 text-lightblue-light'>من نحن؟</h2>

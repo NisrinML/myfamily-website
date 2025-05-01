@@ -30,7 +30,7 @@ const HeroSection = () => {
                     />
 
                     <p className='text-darkblue-light mb-6 pt-2 text-2xl lg:text-4xl sm:text-xl'>
-                        نسعى لجعل العالم مكان أفضل للحياة
+                    يدٌ تساعد، وقلبٌ يعطف، ومستقبلٌ يُبنى
                     </p>
                     <div>
                         <button className='px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
