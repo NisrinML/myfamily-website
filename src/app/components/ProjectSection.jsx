@@ -1,6 +1,9 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag';
 
+//filters type All, Support, Kids, Health, Supplies
 const projectsData = [
     {
         id: 1,
@@ -67,15 +70,27 @@ const projectsData = [
     },
 ]
 const ProjectSection = () => {
+    const [tag,setTag]=useState("All")
+    const handleTagChange= (newTag) =>{
+        setTag(newTag)
+    }
+
+    const filteredProjects = projectsData.filter((project)=>{
+      return project.tag.includes(tag)  
+    })
     return (
         <>
      <h2 className='text-4xl font-bold mb-4 text-lightblue-light mt-4 text-center'>مبادراتنا</h2>
-      <div>
-        
+      <div className='text-lightblue-light flex flex-row justify-center items-center gap-2 md:gap-4 lg:gap-6 py-6 '>
+    <ProjectTag onClick={handleTagChange} name="All" isSelected={tag=="All"}/>
+    <ProjectTag onClick={handleTagChange} name="Support" isSelected={tag=="Support"}/>
+    <ProjectTag onClick={handleTagChange} name="Kids" isSelected={tag=="Kids"}/>
+    <ProjectTag onClick={handleTagChange} name="Health" isSelected={tag=="Health"}/>
+    <ProjectTag onClick={handleTagChange} name="Supplies" isSelected={tag=="Supplies"}/>
       </div>
-            <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
             {
-                projectsData.map((project)=>
+                filteredProjects.map((project)=>
                     <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} faceUrl={project.faceUrl} instaUrl={project.instaUrl}/>
                 )
             }
