@@ -27,19 +27,19 @@ const EmailSection = () => {
                 <form className='flex flex-col gap-6'>
                     <div className='flex flex-col gap-2'>
                         <label htmlFor='email' className='text-lightblue-light block text-base font-semibold'>البريد الإلكتروني :</label>
-                        <input className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light block w-full p-2.5'
+                        <input className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light focus:bg-white-light block w-full p-2.5'
                             type='email' id="email" placeholder='username@gmail.com' required />
 
                     </div>
                     <div className='flex flex-col gap-2'>
                         <label htmlFor='subject' className='text-lightblue-light block text-base font-semibold'>الموضوع :</label>
-                        <input className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light block w-full p-2.5'
+                        <input className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light focus:bg-white-light  block w-full p-2.5'
                             type='text' id="subject" placeholder='موضوع الرسالة' required />
 
                     </div>
                     <div className='flex flex-col gap-2'>
                         <label htmlFor='message' className='text-lightblue-light block text-base font-semibold'>الرسالة :</label>
-                        <textarea className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light block w-full p-2.5'
+                        <textarea className='bg-[#d2edd0] border rounded-lg border-lightblue-light text-darkblue-light placeholder:text-lightblue-light focus:outline-none focus:border-darkblue-light focus:bg-white-light  block w-full p-2.5'
                             name="message" id="message" placeholder='لنتحدث عن ...'  required />
 
                     </div>
