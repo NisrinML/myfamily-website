@@ -5,7 +5,7 @@ import React from 'react'
 const Footer = () => {
   return (
    <footer className='footer border border-b-0 border-t-[#B8DDB5] border-l-transparent border-r-transparent text-darkblue-light'>
-<div className='container p-4 flex justify-between items-center'>
+<div className='container p-4 px-12 flex justify-between items-center'>
 <Link href={"/"} >
                  
                  <Image
