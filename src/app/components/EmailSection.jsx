@@ -42,8 +42,8 @@ const EmailSection = () => {
             );
     };
     return (
-        <section className='grid md:grid-cols-2 my-12 py-4 md:py-24 gap-4 relative'>
-            <div className='bg-gradient-to-r from-[#3BA387]  to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -right-4 transform translate-x-1/2 -translate-1/2 opacity-50'></div>
+        <section className='grid md:grid-cols-2 my-12 py-4 md:py-12 gap-4 relative'>
+            <div className='bg-gradient-to-r from-[#3BA387]  to-transparent rounded-full h-60 w-60 z-0 blur-lg absolute top-3/4 -right-4 transform translate-x-1/2 -translate-1/2 opacity-50'></div>
             <div className='flex flex-col justify-center z-10'>
                 <h5 className='text-4xl font-bold mb-4 text-lightblue-light mt-4 '>اتصل بنا</h5>
                 <p className='text-darkblue-light mb-4 max-w-md text-lg'>
@@ -60,7 +60,7 @@ const EmailSection = () => {
                     </Link>
                 </div>
             </div>
-            <div>
+            <div className='z-10'>
                 <form className='flex flex-col gap-6' ref={ref} onSubmit={sendEmail}>
                     <div className='flex flex-col gap-2'>
                         <label htmlFor='name' className='text-lightblue-light block text-base font-semibold'>الاسم :</label>

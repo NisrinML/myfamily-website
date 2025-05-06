@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation'
 const HeroSection = () => {
     return (
         <section>
-            <div className='grid grid-cols-1 sm:grid-cols-12'>
+            <div className='grid grid-cols-1 sm:grid-cols-12 py-16'>
                 <div className='col-span-7 gap-1 place-self-center md:text-center sm:text-right'>
                     <h1 className="bg-gradient-to-br from-[rgb(22,96,136)] to-[#3BA387] bg-clip-text text-transparent 
                 mb-4 text-6xl lg:text-8xl sm:text-5xl font-extrabold pb-2 ">مؤسسة عائلتي

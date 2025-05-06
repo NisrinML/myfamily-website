@@ -8,7 +8,7 @@ import Image from 'next/image';
 const Navbar = () => {
     const navLinks = [
         { title: "تعرف علينا", href: "#About" },
-        { title: "خدماتنا", href: "#Goals" },
+        //{ title: "خدماتنا", href: "#Goals" },
         { title: "مبادراتنا", href: "#Projects" },
         { title: "اتصل بنا", href: "#Contact" },
     ]
