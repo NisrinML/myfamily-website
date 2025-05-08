@@ -10,12 +10,12 @@ const ProjectCard = ({imgUrl,title,description,faceUrl,instaUrl}) => {
         style={{background:`url(${imgUrl})`,backgroundSize:"cover"}}>
         <div className='overlay flex items-center justify-center gap-2 absolute top-0 left-0 h-full w-full bg-[#d2edd0] bg-opacity-0 hidden
         group-hover:flex group-hover:bg-opacity-80 transition-all duration-500'>
-          <Link href={faceUrl} className='h-14 w-14 border-2 relative rounded-full border-[#166088] hover:bg-white-light'>
-          <Image src="/images/facebook.svg" height={35} width={35} 
+          <Link href={faceUrl} rel="noopener noreferrer" target="_blank"  className='h-14 w-14 border-2 relative rounded-full border-[#166088] hover:bg-white-light'>
+          <Image src="/images/facebook.svg" height={35} width={35} alt="Facebook Icon"
           className=' absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer' />
           </Link>
-          <Link href={instaUrl} className='h-14 w-14 border-2 relative rounded-full border-[#166088] hover:bg-white-light'>
-          <Image src="/images/instagram.svg" height={35} width={35} 
+          <Link  href={instaUrl}  rel="noopener noreferrer" target="_blank" className='h-14 w-14 border-2 relative rounded-full border-[#166088] hover:bg-white-light'>
+          <Image src="/images/instagram.svg" height={35} width={35} alt="Instagram Icon"
           className=' absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer' />
           </Link>
         </div>
