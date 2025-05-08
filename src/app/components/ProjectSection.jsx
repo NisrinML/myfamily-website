@@ -79,7 +79,7 @@ const ProjectSection = () => {
       return project.tag.includes(tag)  
     })
     return (
-        <>
+        <section id="Projects">
      <h2 className='text-4xl font-bold mb-4 text-lightblue-light mt-4 text-center'>مبادراتنا</h2>
       <div className='text-lightblue-light flex flex-row justify-center items-center gap-2 md:gap-4 lg:gap-6 py-6 '>
     <ProjectTag onClick={handleTagChange} name="All" isSelected={tag=="All"}/>
@@ -95,7 +95,7 @@ const ProjectSection = () => {
                 )
             }
             </div>
-        </>
+        </section>
     )
 }
 

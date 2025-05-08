@@ -14,7 +14,7 @@ const Navbar = () => {
     ]
     const [navbarOpen, setNavbarOpen] = useState(false)
     return (
-        <nav className={`fixed top-0 right-0 left-0 z-10 bg-[#d2edd0] ${navbarOpen?'bg-opacity-100':'bg-opacity-70'}`}>
+        <nav className={`fixed top-0 right-0 left-0 z-10 bg-[#d2edd0] border-b border-[#B8DDB5]  ${navbarOpen?'bg-opacity-100':'bg-opacity-70'}`}>
             <div className='flex flex-wrap items-center justify-between mx-auto px-6 my-4'>
                 <Link href={"/"} className='w-28 h-12 md:w-32 md:h-16 lg:w-36 lg:h-16 xl:w-40 xl:h-20' >
                  

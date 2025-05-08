@@ -42,7 +42,7 @@ const EmailSection = () => {
             );
     };
     return (
-        <section className='grid md:grid-cols-2 my-12 py-4 md:py-12 gap-4 relative'>
+        <section className='grid md:grid-cols-2 my-12 py-4 md:py-12 gap-4 relative' id="Contact">
             <div className='bg-gradient-to-r from-[#3BA387]  to-transparent rounded-full h-60 w-60 z-0 blur-lg absolute top-3/4 -right-4 transform translate-x-1/2 -translate-1/2 opacity-50'></div>
             <div className='flex flex-col justify-center z-10'>
                 <h5 className='text-4xl font-bold mb-4 text-lightblue-light mt-4 '>اتصل بنا</h5>

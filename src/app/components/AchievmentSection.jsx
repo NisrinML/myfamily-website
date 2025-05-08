@@ -2,35 +2,34 @@ import React from 'react'
 
 const achievmentList=[
   {
-    metric:"",
-    numbers:""
+    metric:"مستفيد من جلسات التوعية",
+    numbers:"+1K"
   },
   {
-    metric:"",
-    numbers:""
+    metric:"مستفيد من الحملات الطبية",
+    numbers:"+600"
   },
   {
-    metric:"",
-    numbers:""
+    metric:"مستفيد من السلل الغذائية",
+    numbers:"+300"
   },{
-    metric:"",
-    numbers:""
+    metric:"مستفيد من الدورات التدريبية ",
+    numbers:"+500"
   }
 ]
 const AchievmentSection = () => {
   return (
-    <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:py-16'>
-      <div className='border-lightblue-light border rounded-md py-8 px-16 flex flex-row items-center justify-between '>
+    <div className='py-4 px-4 xl:gap-16 md:py-16'>
+      <div className='border-lightblue-light border rounded-md py-8 lg:py-16 px-4 flex flex-row items-stretch  justify-between '>
       {
-        achievmentList.map((achievment,index)=>{
-          return(
+        achievmentList.map((achievment,index)=>{ return(
           <div key={index}
-          className='flex flex-col items-center justify-center mx-4'
+          className='flex flex-col items-center justify-start mx-2 md:mx-4 flex-1'
           >
-            <h2 className='text-lightblue-light text-4xl font-bold'>
+            <h2 className='text-darkgreenhover-light text-xl md:text-3xl lg:text-4xl font-bold'>
               {achievment.numbers}
             </h2>
-            <p className='text-darkblue-light text-base '>
+            <p className='text-darkblue-light text-sm md:text-base lg:text-xl text-center '>
               {achievment.metric}
             </p>
           </div>
