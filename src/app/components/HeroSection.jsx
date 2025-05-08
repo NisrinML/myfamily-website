@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const HeroSection = () => {
 
@@ -36,14 +37,15 @@ const HeroSection = () => {
                         يدٌ تساعد، وقلبٌ يعطف، ومستقبلٌ يُبنى
                     </p>
                     <div>
-                        <button className='px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
+                        <Link href="#Contact" className='px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
                      text-white-light  hover:bg-bluehover-light hover:text-darkblue-light hover:border hover:border-darkblue-light hover:from-transparent hover:to-transparent'>
                             راسلنا
-                        </button>
-                        <button className='px-6 py-3 mt-3 rounded-full w-full sm:w-fit font-sans font-semibold text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
+                        </Link>
+                        <Link  rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/share/1PsiKS4QAu/"
+                        className='px-6 py-3 mt-3 rounded-full w-full sm:w-fit font-sans font-semibold text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
                      text-white-light hover:bg-greenhover-light hover:text-darkgreenhover-light hover:border hover:border-darkgreenhover-light hover:from-transparent hover:to-transparent'>
                             زيارة صفحتنا على فيسبوك
-                        </button>
+                        </Link>
                     </div>
                 </motion.div>
                 <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
