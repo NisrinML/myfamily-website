@@ -31,7 +31,7 @@ const achievmentList = [
 const AchievmentSection = () => {
   return (
     <div className='py-4 px-4 xl:gap-16 md:py-16'>
-      <div className='border-lightblue-light border rounded-md py-8 lg:py-16 px-4 flex flex-row items-stretch  justify-between '>
+      <div className='border-lightblue-light border rounded-md py-8 lg:py-16 px-4 flex flex-col md:flex-row items-stretch  justify-between '>
         {
           achievmentList.map((achievment, index) => {
             return (

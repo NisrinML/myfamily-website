@@ -95,7 +95,7 @@ const ProjectSection = () => {
     return (
         <section id="Projects" ref={ref}>
             <h2 className='text-4xl font-bold mb-4 text-lightblue-light mt-4 text-center'>مبادراتنا</h2>
-            <div className='text-lightblue-light flex flex-row justify-center items-center gap-2 md:gap-4 lg:gap-6 py-6 '>
+            <div className='text-lightblue-light flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 lg:gap-6 py-6 '>
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag == "All"} />
                 <ProjectTag onClick={handleTagChange} name="Support" isSelected={tag == "Support"} />
                 <ProjectTag onClick={handleTagChange} name="Kids" isSelected={tag == "Kids"} />
