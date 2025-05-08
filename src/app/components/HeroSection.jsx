@@ -2,16 +2,19 @@
 import Image from 'next/image'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from 'framer-motion'
 
 const HeroSection = () => {
+
     return (
         <section >
             <div className='grid grid-cols-1 sm:grid-cols-12'>
-                <div className='col-span-7 gap-1 place-self-center md:text-center sm:text-right'>
+                <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
+                    className='col-span-7 gap-1 place-self-center md:text-center sm:text-right'>
                     <h1 className="bg-gradient-to-br from-[rgb(22,96,136)] to-[#3BA387] bg-clip-text text-transparent 
                 mb-4 text-6xl lg:text-8xl  sm:text-5xl font-extrabold pb-2 ">مؤسسة عائلتي
                     </h1>
-      
+
                     <TypeAnimation
                         sequence={[
 
@@ -30,7 +33,7 @@ const HeroSection = () => {
                     />
 
                     <p className='text-darkblue-light mb-6 pt-2 text-2xl lg:text-4xl sm:text-xl'>
-                    يدٌ تساعد، وقلبٌ يعطف، ومستقبلٌ يُبنى
+                        يدٌ تساعد، وقلبٌ يعطف، ومستقبلٌ يُبنى
                     </p>
                     <div>
                         <button className='px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
@@ -42,8 +45,9 @@ const HeroSection = () => {
                             زيارة صفحتنا على فيسبوك
                         </button>
                     </div>
-                </div>
-                <div className='col-span-5 place-self-center my-8 md:my-0'>
+                </motion.div>
+                <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
+                    className='col-span-5 place-self-center my-8 md:my-0'>
                     <div className='rounded-full bg-greenhover-light bg-opacity-50 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                         <Image
                             src="/images/Logo.png"
@@ -53,7 +57,7 @@ const HeroSection = () => {
                             height={350}
                         />
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
