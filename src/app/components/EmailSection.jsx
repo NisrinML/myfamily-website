@@ -17,7 +17,7 @@ const contactInfo=[
     },
     {
         id:2,
-        text:'(+963) 992 424 9595',
+        text:'(+963) 992 424 959',
         icon:PhoneIcon,
         alt:'Phone Icon'
     },
