@@ -37,14 +37,18 @@ const HeroSection = () => {
                         يدٌ تساعد، وقلبٌ يعطف، ومستقبلٌ يُبنى
                     </p>
                     <div>
-                        <Link href="#Contact" className='px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
+                        <Link href="#Contact" className='px-3 md:px-6 py-3 rounded-full w-full sm:w-fit ml-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
                      text-white-light  hover:bg-bluehover-light hover:text-darkblue-light hover:border hover:border-darkblue-light hover:from-transparent hover:to-transparent'>
                             راسلنا
                         </Link>
                         <Link  rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/share/1PsiKS4QAu/"
-                        className='px-6 py-3 mt-3 rounded-full w-full sm:w-fit font-sans font-semibold text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
+                        className='px-3 md:px-6 py-3 mt-3 rounded-full w-full sm:w-fit font-sans font-semibold text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
                      text-white-light hover:bg-greenhover-light hover:text-darkgreenhover-light hover:border hover:border-darkgreenhover-light hover:from-transparent hover:to-transparent'>
                             زيارة صفحتنا على فيسبوك
+                        </Link>
+                              <Link href="/HLP.pdf" target="_blank" className='px-3 md:px-6 py-3 rounded-full w-full sm:w-fit mr-2 md:mr-4 font-semibold font-sans text-base lg:text-lg bg-gradient-to-br from-[#3BA387] to-[rgb(22,96,136)]
+                     text-white-light  hover:bg-bluehover-light hover:text-darkblue-light hover:border hover:border-darkblue-light hover:from-transparent hover:to-transparent' download>
+                            HLP
                         </Link>
                     </div>
                 </motion.div>
