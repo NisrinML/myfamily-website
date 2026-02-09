@@ -11,7 +11,7 @@ import GmailIcon from '../../../public/images/gmail.svg'
 const contactInfo=[
     {
         id:1,
-        text:'سوريا، حمص، الدبلان',
+        text:'سوريا، حمص، جورة الشياح',
         icon:LocationIcon,
         alt:'Location Icon'
     },
