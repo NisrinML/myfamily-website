@@ -76,9 +76,9 @@ const AboutSection = () => {
             <TabButton selectTab={() => handleTabChange("goals")}
               active={tab === "goals"}
             >أهدافنا</TabButton>
-            <TabButton selectTab={() => handleTabChange("members")}
+          {/* <TabButton selectTab={() => handleTabChange("members")}
               active={tab === "members"}
-            >الأعضاء</TabButton>
+            >الأعضاء</TabButton> */}
           </div>
           <div className=' mt-2 md:mt-4 text-darkblue-light text-base md:text-lg'>
             {
